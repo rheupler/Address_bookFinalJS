@@ -10,9 +10,9 @@ $(document).ready(function() {
     $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
 
 
-      $("input#new-first-name").val("");
-      $("input#new-last-name").val("");
-      $("input#new-address").val("");
+    $("input#new-first-name").val("");
+    $("input#new-last-name").val("");
+    $("input#new-address").val("");
 
     $(".contact").last().click(function() {
       $("#show-contact").show();
