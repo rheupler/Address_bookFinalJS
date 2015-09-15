@@ -1,3 +1,11 @@
+function Contact(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.addresses = [];
+}
+
+
+
 $(document).ready(function() {
   $("#add-address").click(function() {
     $("#new-addresses").append(
@@ -18,7 +26,7 @@ $(document).ready(function() {
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
 
-    var newContact = {firstName: inputtedFirstName, lastName: inputtedLastName, addresses: []};
+    var newContact = {inputtedFirstName, inputtedLastName, addresses: []};
     $(".new-address").each(function() {
       var inputtedStreet = $(this).find("input.new-street").val();
       var inputtedCity = $(this).find("input.new-city").val();
